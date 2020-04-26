@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">ShopApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Welcome to the IHU shop.</string>
+    <string name="nav_header_subtitle">Have a nice shopping experience!</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!--activity_main_drawer-->
+    <string name="menu_client_area">Shopping</string>
+    <string name="menu_shop">Shop</string>
+    <string name="menu_basket">My cart</string>
+    <string name="menu_admin_area">Administration</string>
+    <string name="menu_sales">Sales</string>
+    <string name="menu_products">Products</string>
+    <string name="menu_clients">Clients</string>
+
+    <!--fragment_products-->
+    <string name="add_product">Add product</string>
+
+    <!--fragment_add_product-->
+    <string name="add_product_title">Add new product</string>
+    <string name="add_product_name">Insert product name</string>
+    <string name="add_product_price">Insert product price</string>
+    <string name="add_product_quantity">Insert product quantity</string>
+    <string name="add_product_submit">Submit</string>
+
+    <!--fragment_upd_del_product-->
+    <string name="upd_del_product_title">Update or Delete Product</string>
+    <string name="upd_del_product_subtitle">Click on an attribute to update it</string>
+    <string name="upd_product_name">Name:</string>
+    <string name="upd_product_price">Price:</string>
+    <string name="upd_product_stock">Stock:</string>
+    <string name="upd_product">Update</string>
+    <string name="del_product">Delete</string>
+
+    <!--fragment_cart-->
+    <string name="cart_submit">Submit cart</string>
+    <string name="cart_total">Total:</string>
+
+    <!--fragment_submit_cart_-->
+    <string name="submit_cart_title">Submit your cart</string>
+    <string name="submit_cart_firstName">Insert first name</string>
+    <string name="submit_cart_lastName">Insert last name</string>
+    <string name="submit_cart_address">Insert address</string>
+
+    <!--fragment_upd_del_product-->
+    <string name="upd_del_client_title">Update or Delete Client</string>
+    <string name="upd_client_firstName">First name:</string>
+    <string name="upd_client_lastName">Last name:</string>
+    <string name="upd_client_address">Address:</string>
+    <string name="upd_client">Update</string>
+    <string name="del_client">Delete</string>
+
+    <!--fragment_upd_del_transaction-->
+    <string name="upd_del_transaction_title">Update or Delete Transaction</string>
+    <string name="upd_transaction_quantity">Quantity:</string>
+    <string name="upd_transaction">Update</string>
+    <string name="del_transaction">Delete</string>
+
+    <!--fragment_sales-->
+    <string name="select_hint">Select a product</string>
+    <string name="search_btn">Search</string>
+
+    <!--fragment_empty-->
+    <string name="empty_cart">Cart is empty!</string>
+    <string name="empty_clients">No clients yet!</string>
+    <string name="empty_products">No products yet!</string>
+
+    <!--toast messages-->
+    <string name="toast_add_cart">Added to cart!</string>
+    <string name="toast_stock">Not enough stock!</string>
+    <string name="toast_fill">Fill out all fields!</string>
+    <string name="toast_cart">Cart submitted!</string>
+    <string name="toast_product">No such product!</string>
+    <string name="toast_add_product">Product added!</string>
+    <string name="toast_del_product">Product deleted!</string>
+    <string name="toast_upd_product">Product updated!</string>
+    <string name="toast_del_transaction">Transaction deleted!</string>
+    <string name="toast_upd_transaction">Transaction updated!</string>
+    <string name="toast_del_client">Client deleted!</string>
+    <string name="toast_upd_client">Client updated!</string>
+</resources>

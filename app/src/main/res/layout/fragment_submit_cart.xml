@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_cart_title"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_title"
+        android:layout_margin="@dimen/title_margin"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:inputType="textPersonName"
+        android:hint="@string/submit_cart_firstName"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:inputType="textPersonName"
+        android:hint="@string/submit_cart_lastName"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:inputType="textPersonName"
+        android:hint="@string/submit_cart_address"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/submitCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/add_product_submit"
+        android:background="@color/colorButtonAccept"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

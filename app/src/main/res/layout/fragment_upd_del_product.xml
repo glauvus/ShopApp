@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upd_del_product_title"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upd_del_product_subtitle"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_small"
+            android:text="@string/upd_product_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no"
+            app:layout_constraintBaseline_toBaselineOf="@id/nameText"
+            app:layout_constraintStart_toEndOf="@id/nameText"/>
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/upd_product_price"
+            app:layout_constraintTop_toBottomOf="@id/nameText"
+            app:layout_constraintEnd_toEndOf="@id/nameText"/>
+
+        <EditText
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no"
+            app:layout_constraintBaseline_toBaselineOf="@id/priceText"
+            app:layout_constraintStart_toStartOf="@id/productName"/>
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/upd_product_stock"
+            app:layout_constraintTop_toBottomOf="@id/priceText"
+            app:layout_constraintEnd_toEndOf="@id/priceText"/>
+
+        <EditText
+            android:id="@+id/productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no"
+            app:layout_constraintBaseline_toBaselineOf="@id/quantityText"
+            app:layout_constraintStart_toStartOf="@id/productName"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/updateProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/upd_product"
+        android:background="@color/colorButtonAccept"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/deleteProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:text="@string/del_product"
+        android:background="@color/colorButtonDelete"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

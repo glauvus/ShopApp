@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upd_del_client_title"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_title"
+        android:layout_marginTop="@dimen/title_margin"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on an attribute to update it"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_small"
+        android:layout_marginBottom="@dimen/title_margin"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/firstNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_small"
+            android:text="@string/upd_client_firstName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/clientFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no"
+            app:layout_constraintBaseline_toBaselineOf="@id/firstNameText"
+            app:layout_constraintStart_toEndOf="@id/firstNameText"/>
+
+        <TextView
+            android:id="@+id/lastNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/upd_client_lastName"
+            app:layout_constraintTop_toBottomOf="@id/firstNameText"
+            app:layout_constraintEnd_toEndOf="@id/firstNameText"/>
+
+        <EditText
+            android:id="@+id/clientLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no"
+            app:layout_constraintBaseline_toBaselineOf="@id/lastNameText"
+            app:layout_constraintStart_toStartOf="@id/clientFirstName"/>
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/upd_client_address"
+            app:layout_constraintTop_toBottomOf="@id/lastNameText"
+            app:layout_constraintEnd_toEndOf="@id/lastNameText"/>
+
+        <EditText
+            android:id="@+id/clientAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no"
+            app:layout_constraintBaseline_toBaselineOf="@id/addressText"
+            app:layout_constraintStart_toStartOf="@id/clientFirstName"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/updateClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/upd_client"
+        android:background="@color/colorButtonAccept"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/deleteClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:text="@string/del_client"
+        android:background="@color/colorButtonDelete"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
